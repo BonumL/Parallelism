@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://diefllm4csxr2"]
+
+[ext_resource type="Script" uid="uid://b0uvgmgjeyfk7" path="res://Scripts/player_controller.gd" id="1_v0iea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f60y1"]
+size = Vector2(8, 16)
+
+[node name="Player" type="CharacterBody2D" unique_id=1514525750]
+script = ExtResource("1_v0iea")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1815848311]
+color = Color(0.5410682, 0.21329147, 0.547334, 1)
+polygon = PackedVector2Array(-4, -8, 4, -8, 4, 8, -4, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1371577912]
+shape = SubResource("RectangleShape2D_f60y1")
