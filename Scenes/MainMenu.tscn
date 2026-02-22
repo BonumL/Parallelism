@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://ckmi8yx8crrbj"]
+
+[ext_resource type="Texture2D" uid="uid://d3dc0dm4t3jbc" path="res://icon.svg" id="1_tt5f1"]
+
+[node name="Control" type="Control" unique_id=12935502]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=264967404]
+modulate = Color(1, 0.5137255, 0.9647059, 0.5058824)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tt5f1")
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=554186915]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[wave][rainbow]Let's goo!! C'est réussi !![/rainbow][/wave]"
+horizontal_alignment = 1
+vertical_alignment = 1
